@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+  }
+  
+  .hafsa-text {
+    position: absolute;
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    color: #ff69b4;
+    text-shadow: 
+      -1px -1px 0 #fff,  
+      1px -1px 0 #fff,
+      -1px 1px 0 #fff,
+      1px 1px 0 #fff;  /* Creates the outline effect */
+    animation: fall 5s linear forwards;
+    animation-delay: 2s;  /* Adds a 1-second delay before the fall */
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+      opacity: 0;
+    }
+  }
+  
+  
